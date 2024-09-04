@@ -6,3 +6,23 @@ external-controller: :9090
 proxies:
 proxy-groups:
 rules:
+- name: ff-serv-h2
+type: hysteria2
+server: 31.186.87.205
+port: 1121
+password: lncU0qcdCCeQz5gO
+alpn:
+    - h3
+    sni: [www.bing.com](http://www.bing.com/)
+    skip-cert-verify: true
+    fast-open: true
+- name: PL-Atman_Sp._z_o.o.
+type: hysteria2
+server: 31.186.87.205
+port: 13235
+password: dS2TbhbLs9kN68nJ
+alpn:
+    - h3
+    sni: [www.bing.com](http://www.bing.com/)
+    skip-cert-verify: true
+    fast-open: true
